@@ -1,0 +1,307 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+   
+
+/* h1{
+    font-size: 100px ;
+    color:rgb(255, 0, 128); */
+    /* color:color-mix(in hsl shorter hue,goldenrod percentage 50, aqua percentage 50); */
+    /* ^this doesnt work -- research this
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+} */
+
+/* h2{
+    font-size: 50px;
+    color: aquamarine;
+
+}
+
+h2{
+    display: flex;
+  justify-content: center;
+
+} */
+
+/* Colour Palett
+--white: #ffffffff;
+--night: #0a0a0aff;
+--caribbean-current: #005c56ff;
+--moss-green: #918868ff;
+--gray: #817f82ff; 
+*/
+
+
+/* Global Style Sheet */
+
+body{ 
+    font-family:'Roboto', sans-serif;
+    text-align: center;
+    
+}
+
+header{ 
+    display: flex;
+    justify-content: space-between;
+    background-color:#005c56ff;
+    height: 175px;
+   border: #918868ff 20px solid;
+   border-style: double;
+   
+   /* cant seem to get a border working?  */
+}
+
+
+#web_name{
+    /* border: greenyellow 20px solid; */
+    width: 50%;
+    display: flex;
+     /* justify-content: center; */
+     align-items:last baseline;
+}
+    #web_name a {
+        color: white;
+        margin-left: 50px;
+        font-size: 100px;
+        text-decoration: none;
+        
+}
+       #web_name a:hover{
+        color: #918868ff;
+    }
+/* 
+h1{ 
+    display:flex;
+     justify-content: flex-start;
+    color:aliceblue;
+    font-size: 100px
+} */
+
+
+
+h3{
+    font-size: 60px;
+    color:#005c56ff ;
+}
+
+.navbar{ 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 20px pink solid; */
+    align-items:last baseline;
+    width: 30%;
+    font-size: 40px;
+    color: white;
+    /* margin-left: 1100px; */
+    /* flex-direction: row; */
+}
+.navbar a {
+   
+    color: white;
+    margin-top: 30px;
+    size: 100px;
+    font-size: 50px;
+    text-decoration: none;
+}
+    .navbar a:hover{
+   
+        color: #918868ff;
+    }
+
+/* Homepage Style Sheet */
+
+#front_display{
+    border: 20px solid #918868ff;
+    border-style: double;
+    margin: 40px;
+    width: 40%;
+}
+
+.welcome{
+
+    /* display: flex; */
+
+    margin: 60px;
+}
+.homepage_content p{
+  
+   font-size:20px;
+   padding:10px;
+   margin: 20px; 
+   /* width: 50%; */
+
+
+}
+
+
+.homepage_content{ 
+    /* border:2px red solid; */
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Bouquets Style Sheet */
+
+#title_bouquet p{
+    /* border: solid 10px yellow; */
+    font-size:20px;
+    padding:10px;
+    margin: 20px; 
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.bouquet_images{
+    /* border: pink solid 20px; */
+    display: flex; 
+    justify-content:center;
+
+    
+    
+}
+    
+/* Here i am targeting all the images held in #boutique_images to give them all their own border */
+.bouquet_images img{
+    border:#918868ff 10px solid;
+    border-style: double;
+    width: 75%;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+#bouquet_1{
+    /* border: 5px green solid; */
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 33%;
+}
+
+#bouquet_2{
+    /* border: 5px green solid; */
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:33%;
+}
+
+#bouquet_3{
+    /* border: 5px green solid; */
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:33%;
+}
+.bouquet_images h4{
+    color:#005c56ff ;
+}
+/* this targets the specific picture within the class */
+.bouquet_images img[src="Pic- bouquet_4.jpeg"]{
+    width:76%;
+}
+
+
+
+
+/* Plants Style Sheet */
+
+#title_plants p{
+    /* border: solid 10px yellow; */
+    font-size:20px;
+    padding:10px;
+    margin: 20px; 
+    margin-left: 20%;
+    margin-right: 20%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.plant_images{
+    /* border: pink solid 20px; */
+    display: flex; 
+    justify-content:center;
+
+    
+    
+}
+    
+/* Here i am targeting all the images held in #boutique_images to give them all their own border */
+.plant_images img{
+    border:#918868ff 10px solid;
+    border-style: double;
+    width: 75%;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+#plants_1{
+    /* border: 5px green solid; */
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 33%;
+}
+
+#plants_2{
+    /* border: 5px green solid; */
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:33%;
+}
+
+#plants_3{
+    /* border: 5px green solid; */
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width:33%;
+}
+.plant_images h4{
+    color:#005c56ff ;
+}
+/* this targets the specific picture within the class */
+.plant_images img[src="Pic- bouquet_4.jpeg"]{
+    width:76%;
+}
+
+    /* Footer Style Sheet   */
+
+
+.social_media{
+    display:flex;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: #005c56ff;
+    align-items: center;
+    /* width: 100%;- taking away the width cause it was pushing it too far right on the page */
+    border: #918868ff 20px solid;
+    border-style: double;
+    height: 100px;
+
+   
+   }
+   .social_media a {
+   
+       color: white;
+       
+       size: 100px;
+       font-size: 50px;
+       text-decoration: none;
+   }
+       .social_media a:hover{
+      
+           color: #918868ff;
+       }
