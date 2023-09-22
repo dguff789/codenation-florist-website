@@ -1,32 +1,13 @@
-
+/* Typeface for page */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-   
 
-/* h1{
-    font-size: 100px ;
-    color:rgb(255, 0, 128); */
-    /* color:color-mix(in hsl shorter hue,goldenrod percentage 50, aqua percentage 50); */
-    /* ^this doesnt work -- research this
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-} */
 
-/* h2{
-    font-size: 50px;
-    color: aquamarine;
-
-}
-
-h2{
-    display: flex;
-  justify-content: center;
-
-} */
 
 /* Colour Palett
 --white: #ffffffff;
 --night: #0a0a0aff;
---caribbean-current: #005c56ff;
---moss-green: #918868ff;
+--caribbean-current: #005c56ff *(Darker shade for gradient -#003D38ff)
+--moss-green: #918868ff
 --gray: #817f82ff; 
 */
 
@@ -42,39 +23,33 @@ body{
 header{ 
     display: flex;
     justify-content: space-between;
-    background-color:#005c56ff;
+    background-image:linear-gradient(to bottom right,#005c56ff, #003D38ff);
     height: 175px;
    border: #918868ff 20px solid;
    border-style: double;
    
-   /* cant seem to get a border working?  */
 }
 
 
 #web_name{
-    /* border: greenyellow 20px solid; */
+
     width: 50%;
+    height: auto;
     display: flex;
-     /* justify-content: center; */
      align-items:last baseline;
 }
     #web_name a {
         color: white;
         margin-left: 50px;
         font-size: 100px;
+        font-weight: bold;
         text-decoration: none;
         
 }
        #web_name a:hover{
         color: #918868ff;
+        
     }
-/* 
-h1{ 
-    display:flex;
-     justify-content: flex-start;
-    color:aliceblue;
-    font-size: 100px
-} */
 
 
 
@@ -101,6 +76,7 @@ h3{
     margin-top: 30px;
     size: 100px;
     font-size: 50px;
+    line-height: 85px;
     text-decoration: none;
 }
     .navbar a:hover{
@@ -126,9 +102,7 @@ h3{
 .homepage_content p{
   
    font-size:20px;
-   padding:10px;
-   margin: 20px; 
-   /* width: 50%; */
+   width: 70%;
 
 
 }
@@ -199,6 +173,7 @@ h3{
     align-items: center;
     flex-direction: column;
     width:33%;
+    height: auto;
 }
 .bouquet_images h4{
     color:#005c56ff ;
@@ -284,7 +259,7 @@ h3{
     display:flex;
     justify-content: center;
     justify-content: space-around;
-    background-color: #005c56ff;
+    background-image:linear-gradient(to bottom right,#005c56ff, #003D38ff);
     align-items: center;
     /* width: 100%;- taking away the width cause it was pushing it too far right on the page */
     border: #918868ff 20px solid;
